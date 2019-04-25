@@ -1,18 +1,27 @@
 import { combineReducers } from 'redux';
 import { actions } from './actions';
 
-import Splash from '../components/splash/splash';
-
-const component = (state = <Splash key="Splash" />, action) => {
+const head = (state = 0, action) => {
     switch (action.type) {
-        case actions.CHANGE_COMPONENT:
-            return action.component;
+        case actions.CHANGE_HEAD:
+            return action.head;
         
         default:
             return state;
     }
 };
 
+const flesh = (state = "#D3AF8E", action) => {
+    switch(action.type) {
+        case actions.CHANGE_FLESH:
+            return action.flesh;
+
+        default:
+            return state;
+    }
+}
+
 export default combineReducers({
-    component
+    head,
+    flesh
 });

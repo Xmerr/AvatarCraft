@@ -1,10 +1,18 @@
 export const actions = {
-    CHANGE_COMPONENT: "Changes the primary component being displayed"
+    CHANGE_HEAD: "Changes the selected head",
+    CHANGE_FLESH: "Changes the selected flesh color"
 };
 
-export const changeComponent = component => {
+export const changeHead = head => {
     return {
-        type: actions.CHANGE_COMPONENT,
-        component
+        type: actions.CHANGE_HEAD,
+        head
+    };
+};
+
+export const changeFlesh = flesh => {
+    return {
+        type: actions.CHANGE_FLESH,
+        flesh
     };
 };

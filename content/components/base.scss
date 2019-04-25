@@ -66,4 +66,23 @@ body {
     h5 {
         margin-top: 0.75em;
     }
+
+    .MainArea {
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+
+        & > * {
+            flex: 1 1 1px;
+        }
+
+        .Controls {
+            border: 1px solid brown;
+        }
+
+        .Canvas {
+            border: 1px solid black;
+        }
+    }
+
 }

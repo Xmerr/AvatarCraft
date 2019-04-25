@@ -83,6 +83,7 @@ var path = require('path'),
         resolve: {
             alias: {
                 '_images': path.join(__dirname, 'content', 'images'),
+                '_redux': path.join(__dirname, 'content', '.redux')
             },
             extensions: ['.jsx', '.js', '.scss', '.jpeg', '.jpg', '.png', '.gif']
         },
